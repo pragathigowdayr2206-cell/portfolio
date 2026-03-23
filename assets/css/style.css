@@ -79,18 +79,18 @@ section {
 }
 .heading {
   font-size: 3.5rem;
-  color: rgb(32, 32, 32);
+  color: #fff;
   font-weight: 800;
   text-align: center;
 }
 .heading span {
-  color: rgb(115, 3, 167);
+  color: #ffff00;
 }
 header .logo {
   font-size: 1.9rem;
   font-weight: 800;
   text-decoration: none;
-  color: #0e2431;
+  color: #fff;
 }
 header .logo i {
   font-size: 2.2rem;
@@ -109,7 +109,7 @@ header .navbar li {
 }
 header .navbar ul li a {
   font-size: 1.57rem;
-  color: #0e2431;
+  color: #fff;
   font-weight: 600;
   text-decoration: none;
   letter-spacing: 0.04rem;
@@ -224,7 +224,7 @@ header .navbar ul li a:hover {
 .home .content h2 {
   font-size: 5rem;
   font-weight: 800;
-  color: #002057;
+  color: #fff;
 }
 .home .content h2 span {
   font-size: 5rem;
@@ -233,7 +233,7 @@ header .navbar ul li a:hover {
 }
 .home .content p {
   font-size: 2.5rem;
-  color: #000;
+  color: #fff;
   font-weight: 600;
   padding: 1rem 0;
 }
@@ -377,12 +377,12 @@ header .navbar ul li a:hover {
   padding: 3rem;
 }
 .about .row .content h3 {
-  color: rgb(27, 27, 27);
+  color: #fff;
   font-size: 2.5rem;
 }
 .about .row .content .tag {
   font-size: 1.4rem;
-  color: #020133;
+  color: #ffff00;
   font-weight: 600;
   margin-top: 1rem;
 }
@@ -392,6 +392,7 @@ header .navbar ul li a:hover {
   font-family: "Nunito";
   font-weight: 600;
   text-transform: none;
+  color: #fff;
 }
 .about .row .content .box-container {
   display: flex;
@@ -543,6 +544,7 @@ header .navbar ul li a:hover {
   font-family: "Nunito", sans-serif;
   font-weight: 600;
   margin-top: 0.5rem;
+  color: #fff;
 }
 .education .box-container {
   display: flex;
@@ -562,7 +564,7 @@ header .navbar ul li a:hover {
   margin-top: 2rem;
   overflow: hidden;
   transition: 0.3s;
-  background: rgb(252, 252, 252);
+  background: rgba(0, 0, 0, 0.5);
 }
 .education .box-container .box:hover {
   transform: scale(1.03);
@@ -938,7 +940,7 @@ header .navbar ul li a:hover {
 .contact .container {
   max-width: 1050px;
   width: 100%;
-  background: #fff;
+  background: rgba(0, 0, 0, 0.5);
   border-radius: 1.5rem;
   margin: 2rem 5rem;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
@@ -1141,8 +1143,8 @@ form .button-area {
   font-size: 1.7rem;
   margin-right: 1rem;
   transition: 0.2s;
-  background: rgb(230, 230, 230);
-  color: #02094b;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
   border: none;
 }
 .footer .box-container .box .share a:hover {
