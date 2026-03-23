@@ -39,6 +39,21 @@ $(document).ready(function () {
 
     // <!-- emailjs to mail contact form data -->
     $("#contact-form").submit(function (event) {
+        event.preventDefault(); // Prevent default form submission
+
+        // Get form data
+        var formData = {
+            name: $('#contact-form input[name="name"]').val(),
+            email: $('#contact-form input[name="email"]').val(),
+            phone: $('#contact-form input[name="phone"]').val(),
+            message: $('#contact-form textarea[name="message"]').val(),
+            timestamp: new Date().toLocaleString()
+        };
+
+        // Store message locally
+        storeMessage(formData);
+
+        // Send via EmailJS
         emailjs.init("user_TTDmetQLYgWCLzHTDgqxm");
 
         emailjs.sendForm('contact_service', 'template_contact', '#contact-form')
@@ -46,13 +61,48 @@ $(document).ready(function () {
                 console.log('SUCCESS!', response.status, response.text);
                 document.getElementById("contact-form").reset();
                 alert("Form Submitted Successfully");
+                displayMessages(); // Refresh display
             }, function (error) {
                 console.log('FAILED...', error);
                 alert("Form Submission Failed! Try Again");
             });
-        event.preventDefault();
     });
     // <!-- emailjs to mail contact form data -->
+
+    // Function to store message in localStorage
+    function storeMessage(message) {
+        let messages = JSON.parse(localStorage.getItem('contactMessages')) || [];
+        messages.push(message);
+        localStorage.setItem('contactMessages', JSON.stringify(messages));
+    }
+
+    // Function to display messages
+    function displayMessages() {
+        let messages = JSON.parse(localStorage.getItem('contactMessages')) || [];
+        let messagesList = document.getElementById('messages-list');
+        messagesList.innerHTML = '';
+
+        if (messages.length === 0) {
+            messagesList.innerHTML = '<p style="color: #fff; text-align: center;">No messages received yet.</p>';
+            return;
+        }
+
+        messages.forEach((msg, index) => {
+            let messageDiv = document.createElement('div');
+            messageDiv.className = 'message-item';
+            messageDiv.innerHTML = `
+                <h4>${msg.name}</h4>
+                <p class="email">${msg.email}</p>
+                <p><strong>Phone:</strong> ${msg.phone || 'N/A'}</p>
+                <p><strong>Message:</strong> ${msg.message}</p>
+                <p><small>${msg.timestamp}</small></p>
+            `;
+            messagesList.appendChild(messageDiv);
+        });
+    }
+
+    // Display messages on page load
+    displayMessages();
 
 });
 
