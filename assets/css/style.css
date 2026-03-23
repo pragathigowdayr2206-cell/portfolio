@@ -17,7 +17,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background: #000000;
+  background: #00008B;
   font-family: "Poppins", sans-serif;
 }
 
@@ -70,7 +70,7 @@ header {
   justify-content: space-between;
   padding: 1.7rem 10%;
   height: 6.5rem;
-  background-color: #000000;
+  background-color: #00008B;
   box-shadow: 0 1px 4px rgba(146, 161, 176, 0.3);
 }
 section {
@@ -346,7 +346,7 @@ header .navbar ul li a:hover {
 
 /* about section starts */
 .about {
-  background: #000000;
+  background: #00008B;
 }
 .about .row {
   display: flex;
@@ -461,7 +461,7 @@ header .navbar ul li a:hover {
 /* skills section starts */
 .skills {
   min-height: 90vh;
-  background: #000000;
+  background: #00008B;
 }
 .skills h2 {
   color: #fff;
@@ -534,7 +534,7 @@ header .navbar ul li a:hover {
 
 /* education section starts */
 .education {
-  background: #000000;
+  background: #00008B;
   min-height: 80vh;
 }
 .education .qoute {
@@ -642,7 +642,7 @@ header .navbar ul li a:hover {
 /* work section starts */
 .work {
   /* background: #010124; */
-  background: #000000;
+  background: #00008B;
 }
 .work h2 {
   color: #fff;
@@ -932,7 +932,7 @@ header .navbar ul li a:hover {
 
 /* contact section starts */
 .contact {
-  background: #000000;
+  background: #00008B;
   min-height: 60vh;
 }
 .contact .container {
@@ -1091,7 +1091,7 @@ form .button-area {
 .footer {
   min-height: auto;
   padding-top: 0;
-  background: #000000;
+  background: #00008B;
 }
 .footer .box-container {
   display: flex;

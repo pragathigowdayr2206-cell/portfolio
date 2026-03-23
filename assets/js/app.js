@@ -120,7 +120,7 @@ particlesJS('particles-js',
       }
     },
     "background": {
-      "color": "#000000"
+      "color": "#00008B"
     },
     "retina_detect": true,
     "config_demo": {
