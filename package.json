@@ -1,0 +1,32 @@
+{
+  "name": "pragathi-portfolio",
+  "version": "1.0.0",
+  "description": "Personal portfolio website for Pragathi YR",
+  "main": "index.html",
+  "scripts": {
+    "start": "serve .",
+    "build": "echo 'No build step required for static site'",
+    "deploy": "gh-pages -d .",
+    "test": "echo 'No tests specified'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pragathigowdayr2206-cell/portfolio.git"
+  },
+  "keywords": [
+    "portfolio",
+    "web-development",
+    "frontend",
+    "backend"
+  ],
+  "author": "Pragathi YR",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pragathigowdayr2206-cell/portfolio/issues"
+  },
+  "homepage": "https://pragathigowdayr2206-cell.github.io/portfolio",
+  "devDependencies": {
+    "gh-pages": "^6.0.0",
+    "serve": "^14.2.1"
+  }
+}
