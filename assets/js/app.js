@@ -119,6 +119,9 @@ particlesJS('particles-js',
         }
       }
     },
+    "background": {
+      "color": "#000000"
+    },
     "retina_detect": true,
     "config_demo": {
       "hide_card": false,
