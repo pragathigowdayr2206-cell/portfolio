@@ -193,6 +193,8 @@ header .navbar ul li a:hover {
   left: 0;
   height: 100%;
   width: 100%;
+  pointer-events: none;
+  z-index: 0;
 }
 .home::before {
   content: "";
@@ -201,6 +203,7 @@ header .navbar ul li a:hover {
   left: 0;
   height: 100%;
   width: 100%;
+  pointer-events: none;
 }
 .home .content {
   flex: 1 1 40rem;
